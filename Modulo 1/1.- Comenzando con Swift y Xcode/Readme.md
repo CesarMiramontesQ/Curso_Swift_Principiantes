@@ -1,23 +1,38 @@
 # Comenzando con Swift y Xcode
 
-En este módulo, los estudiantes aprenderán los conceptos básicos del lenguaje de programación Swift y del entorno de desarrollo integrado Xcode. A continuación, se explican los temas principales que se tratarán en este módulo:
+Swift es un lenguaje de programación moderno desarrollado por Apple y se utiliza para crear aplicaciones iOS, macOS, watchOS y tvOS. Xcode es el entorno de desarrollo integrado (IDE) oficial para el lenguaje de programación Swift y proporciona un conjunto completo de herramientas y funciones para desarrollar aplicaciones Swift.
 
 ## Configuración del entorno de desarrollo
 
-En este tema, los estudiantes aprenderán a configurar el entorno de desarrollo en Xcode para comenzar a escribir y ejecutar programas en Swift. Se les guiará a través de los pasos necesarios para instalar Xcode en su sistema y se les mostrará cómo crear un nuevo proyecto en Xcode.
+Para comenzar a programar en Swift, deberá configurar un entorno de desarrollo en su computadora. Estos son los pasos para comenzar con Xcode:
+
+1. Descargue e instale Xcode desde la Mac App Store. Xcode solo está disponible para computadoras Mac, por lo que si está utilizando una máquina con Windows o Linux, deberá usar una máquina virtual o IDE diferente.
+2. Una vez que Xcode esté instalado, ábralo desde la carpeta Aplicaciones o desde el Launchpad. Es posible que se le solicite que instale componentes o actualizaciones adicionales, así que siga las instrucciones para completar la configuración.
+3. Cree un nuevo proyecto de Xcode seleccionando "Archivo" > "Nuevo" > "Proyecto..." en la barra de menú. Elija "iOS" o "macOS" como plataforma y seleccione "Aplicación de vista única" como plantilla de proyecto. Asigne un nombre a su proyecto y elija una ubicación para guardarlo.
 
 ## Escribir y ejecutar un programa simple "Hola, mundo"
 
-En este tema, los estudiantes aprenderán a escribir su primer programa en Swift, el famoso "Hola, mundo". Se les mostrará cómo crear una nueva vista en Xcode y cómo escribir el código para imprimir un mensaje en la pantalla.
+Ahora que ha configurado su entorno de desarrollo, es hora de escribir su primer programa Swift. Así es cómo:
+
+1. Abra el archivo ViewController.swift en su proyecto Xcode. Este archivo contiene el código para el controlador de vista principal de su aplicación.
+2. En la función viewDidLoad(), agregue la siguiente línea de código para imprimir "Hello, World!" a la consola:
 
 ```swift
 // Código de ejemplo "Hola, mundo" en Swift
 print("Hola, mundo!")
 ```
+3. Ejecute su aplicación haciendo clic en el botón "Ejecutar" en la barra de herramientas de Xcode, o presionando el atajo de teclado Comando + R. Xcode creará su aplicación, iniciará el simulador y mostrará "¡Hola, mundo!" mensaje en la consola.
+
+¡Felicidades! Acaba de escribir y ejecutar su primer programa Swift.
 
 
 ## Explorando las diferentes funciones de Xcode
 
-En este tema, los estudiantes explorarán las diferentes funciones y herramientas disponibles en Xcode. Se les mostrará cómo utilizar el depurador de Xcode para identificar y solucionar problemas en su código, cómo utilizar el editor de código para escribir y editar su código, y cómo utilizar la documentación de Xcode para encontrar información sobre las diferentes funciones y bibliotecas de Swift.
+Xcode tiene muchas características que hacen que la programación de Swift sea más fácil y eficiente. Estos son algunos de los más útiles:
 
-En general, este módulo proporcionará a los estudiantes los conocimientos básicos necesarios para comenzar a escribir programas en Swift y utilizar el entorno de desarrollo Xcode. Al final de este módulo, los estudiantes tendrán las habilidades necesarias para configurar su entorno de desarrollo, escribir y ejecutar un programa simple "Hola, mundo" y utilizar las diferentes funciones y herramientas disponibles en Xcode.
+* Finalización de código: Xcode puede autocompletar el código a medida que escribe, ahorrándole tiempo y reduciendo errores.
+* Herramientas de depuración: Xcode incluye un depurador que lo ayuda a encontrar y solucionar problemas en su código.
+* Interface Builder: Interface Builder de Xcode le permite diseñar y obtener una vista previa de la interfaz de usuario de su aplicación visualmente.
+* Control de versiones: Xcode se integra con Git, lo que le permite administrar su código y colaborar con otros desarrolladores.
+
+Explore estas funciones y experimente con Xcode para convertirse en un programador Swift más competente.
