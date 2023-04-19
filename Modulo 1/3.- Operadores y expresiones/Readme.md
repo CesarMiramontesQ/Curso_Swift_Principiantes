@@ -106,3 +106,32 @@ print(resultado) // Imprime 10
 ```
 
 En general, este módulo proporcionará a los estudiantes una comprensión sólida de los diferentes tipos de operadores y expresiones en Swift. Al final de este módulo, los estudiantes tendrán las habilidades necesarias para utilizar operadores aritméticos, de comparación, de asignación y lógicos para realizar operaciones en Swift, y también sabrán cómo utilizar expresiones para crear operaciones más complejas.
+
+
+## Ejercicio: Calculadora de propinas
+
+Cree un programa Swift que calcule el costo total de una comida, incluidos los impuestos y la propina. El programa debe solicitar al usuario el costo de la comida, la tasa impositiva y la tasa de propina, luego calcular y mostrar el costo total de la comida.
+
+Aquí un ejemplo de cómo debería funcionar el programa:
+
+```swift
+Enter the cost of the meal: 50
+Enter the tax rate: 8
+Enter the tip rate: 20
+The total cost of the meal is $63.20
+```
+
+Para completar este ejercicio, necesitará usar variables y constantes para almacenar la entrada del usuario y los valores calculados, operadores aritméticos para realizar los cálculos y expresiones para combinar los valores y operadores.
+
+Aquí hay un código de inicio para ayudarlo a comenzar:
+
+```swift
+print("Enter the cost of the meal:")
+// Use the readLine() function to read the user's input
+// Store the cost of the meal, tax rate, and tip rate in variables or constants
+// Use arithmetic operators to calculate the tax and tip amounts
+// Use expressions to combine the values and operators
+// Display the total cost of the meal using string interpolation
+```
+
+¡Buena suerte y diviertete!
