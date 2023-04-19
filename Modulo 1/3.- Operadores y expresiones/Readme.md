@@ -1,120 +1,104 @@
 # Operadores y expresiones
 
-En este módulo, los estudiantes profundizarán en los operadores y expresiones en Swift. A continuación, se explican los temas principales que se tratarán en este módulo:
+Swift proporciona un amplio conjunto de operadores que se pueden usar para realizar varias operaciones en los datos. En esta sección, profundizaremos en los operadores y expresiones de Swift y aprenderemos a usarlos para crear operaciones más complejas.
 
 ## Operadores aritméticos
 
-En este tema, los estudiantes aprenderán acerca de los diferentes operadores aritméticos en Swift, incluyendo la suma, la resta, la multiplicación y la división. Se les mostrará cómo utilizar estos operadores para realizar cálculos simples y complejos en Swift.
+Los operadores aritméticos se utilizan para realizar operaciones aritméticas básicas con datos numéricos. Swift proporciona los siguientes operadores aritméticos:
+
+- Suma: `+`
+- Resta: `-`
+- Multiplicacion: `*`
+- Divicion: `/`
+- Modulo: `%`
+
+Estos son algunos ejemplos del uso de operadores aritméticos en Swift:
 
 ```swift
-// Suma
-var resultado = 5 + 2
-print(resultado) // Imprime 7
-
-// Resta
-resultado = 10 - 4
-print(resultado) // Imprime 6
-
-// Multiplicación
-resultado = 3 * 4
-print(resultado) // Imprime 12
-
-// División
-resultado = 20 / 5
-print(resultado) // Imprime 4
-
-// Módulo
-resultado = 10 % 3
-print(resultado) // Imprime 1
+let sum = 10 + 5 // Addition
+let difference = 10 - 5 // Subtraction
+let product = 10 * 5 // Multiplication
+let quotient = 10 / 5 // Division
+let remainder = 10 % 3 // Remainder
 ```
 
 ## Operadores de comparación
 
-En este tema, los estudiantes aprenderán sobre los operadores de comparación en Swift, que se utilizan para comparar dos valores. Se les mostrará cómo utilizar los operadores de comparación para evaluar si dos valores son iguales, diferentes, mayores o menores que otro.
+Los operadores de comparación se utilizan para comparar dos valores y devolver un valor booleano (verdadero o falso). Swift proporciona los siguientes operadores de comparación:
+
+- Igual a: `==`
+- Diferente a: `!=`
+- Mayor que: `>`
+- Menor que: `<`
+- Mayor o igual que: `>=`
+- Menor o igual que: `<=`
+
+Estos son algunos ejemplos del uso de operadores de comparación en Swift:
 
 ```swift
-// Igual a
-var comparacion = 5 == 5
-print(comparacion) // Imprime true
-
-// Diferente a
-comparacion = 4 != 3
-print(comparacion) // Imprime true
-
-// Mayor que
-comparacion = 7 > 3
-print(comparacion) // Imprime true
-
-// Menor que
-comparacion = 2 < 5
-print(comparacion) // Imprime true
-
-// Mayor o igual que
-comparacion = 5 >= 5
-print(comparacion) // Imprime true
-
-// Menor o igual que
-comparacion = 7 <= 5
-print(comparacion) // Imprime false
+let isGreaterThan = 10 > 5 // Greater than
+let isLessThan = 10 < 5 // Less than
+let isEqual = 10 == 5 // Equal to
+let isNotEqual = 10 != 5 // Not equal to
 ```
 
 ## Operadores de asignación
 
-En este tema, los estudiantes aprenderán acerca de los operadores de asignación en Swift, que se utilizan para asignar un valor a una variable o constante. Se les mostrará cómo utilizar estos operadores para asignar valores y modificar el valor de una variable o constante.
+Los operadores de asignación se utilizan para asignar un valor a una variable o constante. Swift proporciona varios operadores de asignación, que incluyen:
+
+- Asignación sencilla: `=`
+- Asignación de adición: `+=`
+- Asignación de resta: `-=`
+- Asignación de multiplicación: `*=`
+- Asignación de división: `/=`
+- Asignación Modulo: `%=`
+
+Estos son algunos ejemplos del uso de operadores de asignación en Swift
 
 ```swift
-// Asignación simple
-var miVariable = 10
-print(miVariable) // Imprime 10
-
-// Asignación con operación
-miVariable += 5
-print(miVariable) // Imprime 15
-
-// Asignación con operación de resta
-miVariable -= 3
-print(miVariable) // Imprime 12
+var score = 0 // Simple assignment
+score += 10 // Addition assignment
+score -= 5 // Subtraction assignment
+score *= 2 // Multiplication assignment
+score /= 3 // Division assignment
+score %= 2 // Remainder assignment
 ```
 
-## Operadores lógicos
+## Operadores logicos
 
-En este tema, los estudiantes aprenderán sobre los operadores lógicos en Swift, que se utilizan para evaluar expresiones booleanas. Se les mostrará cómo utilizar los operadores lógicos para combinar expresiones booleanas y crear expresiones más complejas.
+Los operadores lógicos se utilizan para combinar valores booleanos y devolver un resultado booleano. Swift proporciona los siguientes operadores lógicos:
+
+- Logical NOT: `!`
+- Logical AND: `&&`
+- Logical OR: `||`
+
+Estos son algunos ejemplos del uso de operadores lógicos en Swift:
 
 ```swift
-// AND lógico
-var logica = true && false
-print(logica) // Imprime false
-
-// OR lógico
-logica = true || false
-print(logica) // Imprime true
-
-// Negación lógica
-logica = !true
-print(logica) // Imprime false
+let isTrue = true && false // Logical AND
+let isFalse = true || false // Logical OR
+let isNot = !true // Logical NOT
 ```
 
+## Expresiones
 
-## Expresiones en Swift
-
-En este tema, los estudiantes aprenderán a utilizar expresiones para crear operaciones más complejas en Swift. Se les mostrará cómo combinar operadores y valores para crear expresiones que realicen cálculos más complejos.
+Las expresiones son combinaciones de valores, variables, operadores y llamadas a funciones que dan como resultado un solo valor. Swift proporciona un sistema de expresiones potente y flexible que le permite crear operaciones complejas mediante una combinación de operadores y expresiones. Estos son algunos ejemplos del uso de expresiones en Swift:
 
 ```swift
-// Ejemplo de expresión
-var resultado = (10 + 5) * 2 / 3
-print(resultado) // Imprime 10
+let result = (10 + 5) * 2 // Evaluates to 30
+let isInRange = (1...10).contains(5) // Evaluates to true
+let message = "Hello, " + "World!" // Evaluates to "Hello, World!"
 ```
 
-En general, este módulo proporcionará a los estudiantes una comprensión sólida de los diferentes tipos de operadores y expresiones en Swift. Al final de este módulo, los estudiantes tendrán las habilidades necesarias para utilizar operadores aritméticos, de comparación, de asignación y lógicos para realizar operaciones en Swift, y también sabrán cómo utilizar expresiones para crear operaciones más complejas.
-
+Al dominar los operadores y las expresiones en Swift, podrá escribir programas más complejos y potentes.
 
 ## Ejercicio: Calculadora de propinas
 
 Cree un programa Swift que calcule el costo total de una comida, incluidos los impuestos y la propina. El programa debe solicitar al usuario el costo de la comida, la tasa impositiva y la tasa de propina, luego calcular y mostrar el costo total de la comida.
 
-Aquí un ejemplo de cómo debería funcionar el programa:
+He aquí un ejemplo de cómo debería funcionar el programa:
 
-```swift
+```
 Enter the cost of the meal: 50
 Enter the tax rate: 8
 Enter the tip rate: 20
@@ -125,7 +109,7 @@ Para completar este ejercicio, necesitará usar variables y constantes para alma
 
 Aquí hay un código de inicio para ayudarlo a comenzar:
 
-```swift
+```
 print("Enter the cost of the meal:")
 // Use the readLine() function to read the user's input
 // Store the cost of the meal, tax rate, and tip rate in variables or constants
