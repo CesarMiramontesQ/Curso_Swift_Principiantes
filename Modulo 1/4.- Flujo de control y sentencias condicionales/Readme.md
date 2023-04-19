@@ -1,87 +1,129 @@
 # Flujo de control y sentencias condicionales
 
-En este módulo, los estudiantes aprenderán sobre el flujo de control y las sentencias condicionales en Swift. A continuación, se explican los temas principales que se tratarán en este módulo:
+Las declaraciones de flujo de control se utilizan para controlar el flujo de un programa en función de ciertas condiciones. En Swift, existen varios tipos de declaraciones de flujo de control, incluidas declaraciones condicionales y bucles.
 
-## Sentencia if
+## Declaraciones condicionales
 
-En este tema, los estudiantes aprenderán sobre la sentencia if en Swift, que se utiliza para tomar decisiones basadas en una condición. Se les mostrará cómo utilizar la sentencia if para evaluar una expresión booleana y ejecutar un bloque de código si la expresión es verdadera.
+Las declaraciones condicionales se utilizan para tomar decisiones basadas en ciertas condiciones. Swift proporciona varias declaraciones condicionales, que incluyen:
+
+### Sentencia if
+
+La declaración if se usa para ejecutar un bloque de código si una determinada condición es verdadera. Esta es la sintaxis básica de una declaración if:
 
 ```swift
-var edad = 18
-
-if edad >= 18 {
-    print("Eres mayor de edad")
-} else {
-    print("Eres menor de edad")
+if condition {
+    // Code to execute if the condition is true
 }
 ```
 
-## Sentencia else-if
-
-En este tema, los estudiantes aprenderán acerca de la sentencia else-if en Swift, que se utiliza para evaluar múltiples condiciones en una estructura if. Se les mostrará cómo utilizar la sentencia else-if para evaluar varias expresiones booleanas y ejecutar un bloque de código si se cumple una de las condiciones.
+Aquí hay un ejemplo del uso de una declaración if en Swift:
 
 ```swift
-var puntaje = 85
+let age = 25
 
-if puntaje >= 90 {
-    print("Excelente trabajo!")
-} else if puntaje >= 80 {
-    print("Muy bien!")
-} else if puntaje >= 70 {
-    print("Bien hecho")
-} else {
-    print("Debes mejorar")
+if age >= 18 {
+    print("You are an adult")
 }
 ```
 
-## Sentencia switch-case
+### Declaración if-else
 
-En este tema, los estudiantes aprenderán acerca de la sentencia switch-case en Swift, que se utiliza para evaluar múltiples condiciones y ejecutar diferentes bloques de código en función de las condiciones evaluadas. Se les mostrará cómo utilizar la sentencia switch-case para evaluar diferentes expresiones y ejecutar diferentes bloques de código en función de los resultados.
+La declaración if-else se usa para ejecutar un bloque de código si una determinada condición es verdadera y otro bloque de código si la condición es falsa. Esta es la sintaxis básica de una instrucción if-else:
 
 ```swift
-var diaSemana = 3
+if condition {
+    // Code to execute if the condition is true
+} else {
+    // Code to execute if the condition is false
+}
+```
 
-switch diaSemana {
-case 1:
-    print("Hoy es Lunes")
-case 2:
-    print("Hoy es Martes")
-case 3:
-    print("Hoy es Miércoles")
-case 4:
-    print("Hoy es Jueves")
-case 5:
-    print("Hoy es Viernes")
-case 6:
-    print("Hoy es Sábado")
-case 7:
-    print("Hoy es Domingo")
+Aquí hay un ejemplo del uso de una declaración if-else en Swift:
+
+```swift
+let age = 15
+
+if age >= 18 {
+    print("You are an adult")
+} else {
+    print("You are not an adult")
+}
+```
+
+### Sentencia if-else-if
+
+La declaración if-else-if se utiliza para ejecutar diferentes bloques de código en función de múltiples condiciones. Aquí está la sintaxis básica de una declaración if-else-if:
+
+```swift
+if condition1 {
+    // Code to execute if condition1 is true
+} else if condition2 {
+    // Code to execute if condition2 is true
+} else {
+    // Code to execute if all conditions are false
+}
+```
+
+Aquí hay un ejemplo del uso de una declaración if-else-if en Swift:
+
+```swift
+let grade = 85
+
+if grade >= 90 {
+    print("You got an A")
+} else if grade >= 80 {
+    print("You got a B")
+} else if grade >= 70 {
+    print("You got a C")
+} else {
+    print("You got a D or lower")
+}
+```
+
+### Sentencia switch
+
+La declaración de cambio se utiliza para ejecutar diferentes bloques de código en función de un valor determinado. Esta es la sintaxis básica de una sentencia switch:
+
+```swift
+switch value {
+case value1:
+    // Code to execute if value == value1
+case value2:
+    // Code to execute if value == value2
 default:
-    print("Día no válido")
+    // Code to execute if value is not equal to any of the cases
 }
 ```
 
-## Expresiones booleanas
-
-En este tema, los estudiantes aprenderán sobre las expresiones booleanas en Swift, que se utilizan en las sentencias condicionales para evaluar si una condición es verdadera o falsa. Se les mostrará cómo utilizar diferentes operadores lógicos para crear expresiones booleanas más complejas.
+Aquí hay un ejemplo del uso de una declaración de cambio en Swift:
 
 ```swift
-var nota = 8
+let dayOfWeek = "Monday"
 
-if nota >= 7 && nota <= 10 {
-    print("Aprobado")
-} else if nota >= 4 && nota < 7 {
-    print("Regular")
-} else if nota >= 0 && nota < 4 {
-    print("Reprobado")
-} else {
-    print("Nota inválida")
+switch dayOfWeek {
+case "Monday":
+    print("It's Monday!")
+case "Tuesday":
+    print("It's Tuesday!")
+case "Wednesday":
+    print("It's Wednesday!")
+case "Thursday":
+    print("It's Thursday!")
+case "Friday":
+    print("It's Friday!")
+default:
+    print("It's the weekend!")
 }
 ```
 
-En general, este módulo proporcionará a los estudiantes una comprensión sólida del flujo de control y las sentencias condicionales en Swift. Al final de este módulo, los estudiantes tendrán las habilidades necesarias para utilizar las sentencias condicionales de Swift, como if, else-if y switch-case, para tomar decisiones basadas en ciertas condiciones, y también sabrán cómo utilizar expresiones booleanas en las sentencias condicionales.
+### Expresiones booleanas
 
-## Ejercicio: Calculadora de calificaciones
+Las expresiones booleanas son expresiones que se evalúan como un valor booleano (`true` o `false`). A menudo se usan en declaraciones condicionales para tomar decisiones basadas en ciertas condiciones. Swift proporciona varios operadores que se pueden usar para crear expresiones booleanas, que incluyen:
+
+* Comparison operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+* Logical operators: `&&` (logica AND), `||` (logica OR), `!` (logica NOT)
+
+### Ejercicio: Calculadora de calificaciones
 
 Cree un programa Swift que calcule la calificación de un estudiante en función de su puntaje porcentual. El programa debe solicitar al usuario el puntaje porcentual, luego usar declaraciones condicionales para determinar la calificación correspondiente según la siguiente escala:
 
@@ -93,19 +135,21 @@ Cree un programa Swift que calcule la calificación de un estudiante en función
 
 He aquí un ejemplo de cómo debería funcionar el programa:
 
-```swift
-Ingresa la calificacion: 85
-Tu calificacion es B
+```
+Enter the percentage score: 85
+Your grade is B
 ```
 
 Para completar este ejercicio, deberá usar variables y constantes para almacenar la entrada del usuario y los valores calculados, declaraciones condicionales para determinar la calificación correspondiente según el puntaje porcentual e interpolación de cadenas para mostrar el resultado.
 
 Aquí hay un código de inicio para ayudarlo a comenzar:
 
-```swift
-print("Ingresa la calificacion:")
+```
+print("Enter the percentage score:")
 // Use the readLine() function to read the user's input
 // Store the percentage score in a variable or constant
 // Use conditional statements to determine the corresponding grade
 // Display the grade using string interpolation
 ```
+
+¡Buena suerte y diviertete!
