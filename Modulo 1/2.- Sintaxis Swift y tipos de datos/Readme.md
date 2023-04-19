@@ -1,97 +1,77 @@
 # Sintaxis Swift y tipos de datos
 
-En este módulo, los estudiantes aprenderán sobre la sintaxis básica y los tipos de datos en Swift. A continuación, se explican los temas principales que se tratarán en este módulo:
+Swift es un lenguaje de programación de tipo estático, lo que significa que cada variable y constante debe tener un tipo específico. Estos son los tipos de datos básicos en Swift:
 
-## Declaración de variables y constantes
+## Enteros
 
-En este tema, los estudiantes aprenderán a declarar variables y constantes en Swift. Se les mostrará cómo declarar una variable utilizando la sintaxis `var`, y cómo declarar una constante utilizando la sintaxis `let`. También se explicará la diferencia entre variables y constantes, y cuándo es apropiado utilizar cada uno.
-
-```swift
-// Declaración de una variable
-var miVariable = "Hola"
-miVariable += " mundo"
-print(miVariable) // Imprime "Hola mundo"
-
-// Declaración de una constante
-let pi = 3.1416
-print(pi) // Imprime 3.1416
-```
-
-## Tipos de datos en Swift
-
-En este tema, los estudiantes aprenderán acerca de los diferentes tipos de datos disponibles en Swift. Se les mostrará cómo declarar tipos de datos como cadenas de texto, enteros y números de punto flotante. También se discutirán otros tipos de datos como los booleanos y los arrays.
+Los enteros son números enteros, ya sean positivos o negativos. Están representados por el tipo Int en Swift, que puede tener diferentes tamaños según la plataforma. Aquí hay unos ejemplos:
 
 ```swift
-// Declaración de una cadena de texto
-var miCadena: String = "Esto es una cadena de texto"
-print(miCadena) // Imprime "Esto es una cadena de texto"
-
-// Declaración de un entero
-var miEntero: Int = 42
-print(miEntero) // Imprime 42
-
-// Declaración de un número de punto flotante
-var miFlotante: Double = 3.14
-print(miFlotante) // Imprime 3.14
+let myAge = 30 // A positive integer
+let yourAge: Int = -25 // A negative integer
 ```
 
-## Operadores en Swift
+## Números de punto flotante
 
-En este tema, los estudiantes aprenderán sobre los operadores integrados en Swift. Se les mostrará cómo utilizar los operadores aritméticos, comparativos y lógicos para realizar operaciones en Swift. También se discutirán los operadores de asignación y los operadores de incremento y decremento.
+Los números de punto flotante son números con un componente fraccionario, como 3,14 o -2,5. Están representados por los tipos Double y Float en Swift, que tienen diferentes precisiones. Aquí hay unos ejemplos:
 
 ```swift
-// Operadores aritméticos
-var resultado = 5 + 2
-print(resultado) // Imprime 7
-
-resultado = 10 - 4
-print(resultado) // Imprime 6
-
-resultado = 3 * 4
-print(resultado) // Imprime 12
-
-resultado = 20 / 5
-print(resultado) // Imprime 4
-
-// Operadores de comparación
-var comparacion = 5 == 5
-print(comparacion) // Imprime true
-
-comparacion = 4 < 3
-print(comparacion) // Imprime false
-
-comparacion = 7 >= 7
-print(comparacion) // Imprime true
-
-// Operadores lógicos
-var logica = true && false
-print(logica) // Imprime false
-
-logica = true || false
-print(logica) // Imprime true
+let pi = 3.14159 // A double-precision floating-point number
+let e: Float = 2.71828 // A single-precision floating-point number
 ```
 
-## Ejercicio: Convertidor de temperatura
+## Strings
 
-Cree un programa Swift que convierta temperaturas entre Celsius y Fahrenheit. El programa debe solicitar al usuario la temperatura y la unidad de medida (Celsius o Fahrenheit), luego convertir la temperatura a la otra unidad de medida y mostrar el resultado.
-
-Aquí un ejemplo de cómo debería funcionar el programa:
+Las cadenas son secuencias de caracteres, como "¡Hola, mundo!" o "¡Swift es genial!". Están representados por el tipo String en Swift y se pueden crear usando literales de cadena o concatenando otras cadenas. Aquí hay unos ejemplos:
 
 ```swift
-Enter the temperature: 32
-Is the temperature in Celsius or Fahrenheit? (C/F): F
-32°F is equal to 0°C
+let message = "Hello, World!" // A string literal
+let name = "John"
+let greeting = "Hi, " + name // Concatenating strings
 ```
 
-Para completar este ejercicio, necesitará usar variables y constantes para almacenar la entrada del usuario y la temperatura convertida, declaraciones condicionales para determinar la fórmula de conversión y operadores aritméticos para realizar la conversión.
+## Booleanos
 
-Aquí hay un código de inicio para ayudarlo a comenzar:
+Los booleanos son valores lógicos que pueden ser verdaderos o falsos. Están representados por el tipo Bool en Swift y, a menudo, se usan en declaraciones condicionales y bucles. Aquí hay unos ejemplos:
 
 ```swift
-print("Enter the temperature:")
-// Use the readLine() function to read the user's input
-// Store the temperature and unit of measurement in variables or constants
-// Use conditional statements to determine the conversion formula
-// Use arithmetic operators to perform the conversion
-// Display the result using string interpolation
+let isRaining = true // A true boolean value
+let isSunny: Bool = false // A false boolean value
 ```
+
+## Variables y constantes
+
+Las variables y constantes se utilizan para almacenar valores en Swift. Las variables se declaran con la palabra clave var y sus valores se pueden cambiar a lo largo del programa. Las constantes se declaran con la palabra clave let y sus valores no se pueden cambiar una vez que se asignan. Aquí hay unos ejemplos:
+
+```swift
+var score = 0 // A variable that can be changed
+score = 10 // The value of the variable is updated
+
+let maxScore = 100 // A constant that cannot be changed
+// maxScore = 200 // This would cause a compile-time error
+```
+
+## Operadores Swift
+
+Swift tiene muchos operadores integrados que se pueden usar para realizar operaciones aritméticas, de comparación y lógicas en los datos. Aquí hay unos ejemplos:
+
+```swift
+// Arithmetic operators
+let sum = 10 + 5 // Addition
+let difference = 10 - 5 // Subtraction
+let product = 10 * 5 // Multiplication
+let quotient = 10 / 5 // Division
+
+// Comparison operators
+let isGreater = 10 > 5 // Greater than
+let isLess = 10 < 5 // Less than
+let isEqual = 10 == 5 // Equal to
+let isNotEqual = 10 != 5 // Not equal to
+
+// Logical operators
+let isTrue = true && false // Logical AND
+let isFalse = true || false // Logical OR
+let isNot = !true // Logical NOT
+```
+
+Al dominar la sintaxis básica y los tipos de datos en Swift, estará bien encaminado para convertirse en un programador de Swift competente.
