@@ -70,3 +70,28 @@ print(logica) // Imprime false
 logica = true || false
 print(logica) // Imprime true
 ```
+
+## Ejercicio: Convertidor de temperatura
+
+Cree un programa Swift que convierta temperaturas entre Celsius y Fahrenheit. El programa debe solicitar al usuario la temperatura y la unidad de medida (Celsius o Fahrenheit), luego convertir la temperatura a la otra unidad de medida y mostrar el resultado.
+
+Aquí un ejemplo de cómo debería funcionar el programa:
+
+```swift
+Enter the temperature: 32
+Is the temperature in Celsius or Fahrenheit? (C/F): F
+32°F is equal to 0°C
+```
+
+Para completar este ejercicio, necesitará usar variables y constantes para almacenar la entrada del usuario y la temperatura convertida, declaraciones condicionales para determinar la fórmula de conversión y operadores aritméticos para realizar la conversión.
+
+Aquí hay un código de inicio para ayudarlo a comenzar:
+
+```swift
+print("Enter the temperature:")
+// Use the readLine() function to read the user's input
+// Store the temperature and unit of measurement in variables or constants
+// Use conditional statements to determine the conversion formula
+// Use arithmetic operators to perform the conversion
+// Display the result using string interpolation
+```
