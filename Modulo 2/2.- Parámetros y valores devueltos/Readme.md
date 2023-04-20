@@ -64,4 +64,45 @@ La función anterior toma dos parámetros, `name` y `mensage`, y el mensaje tien
 ```swift
 greet(name: "John") // Output: John, hello
 ```
+## Parámetros Variádicos
+
+Swift también admite parámetros variables, que le permiten pasar cualquier cantidad de valores a una función. Los parámetros variádicos se indican con puntos suspensivos (`...`) después del tipo de parámetro. Aquí hay un ejemplo de una función que toma un parámetro variádico:
+
+```swift
+func sum(numbers: Int...) -> Int {
+    var result = 0
+    for number in numbers {
+        result += number
+    }
+    return result
+}
+```
+
+La función anterior toma `numbers` de parámetros variables, que es una lista de valores `Int`. Luego, la función suma todos los valores de la lista y devuelve el total.
+
+Para llamar a esta función, puede pasar cualquier número de valores `Int`:
+
+```swift
+let total = sum(numbers: 1, 2, 3, 4)
+print(total) // Output: 10
+```
+
+## Parametros Inout
+
+En Swift, los parámetros se pasan por valor de forma predeterminada, lo que significa que se pasa una copia del valor del parámetro a la función. Sin embargo, también puede pasar parámetros por referencia utilizando la palabra clave `inout`. Esto permite que la función modifique el valor del parámetro directamente.
+
+Aquí hay un ejemplo de una función que toma un parámetro de `inout`:
+
+```swift
+func swapValues(a: inout Int,
+```
+
+## Ejercicio: Parámetros y Valores de Retorno
+
+1. Defina una función llamada `calculeRectangleArea` que tome dos parámetros, `width` y `height`, ambos de tipo `Doble`, y devuelva el área de un rectángulo como `Doble`.
+2. Defina una función denominada `calcularCirculoCircunferencia` que tome un parámetro, `radius`, de tipo `Doble`, y devuelva la circunferencia de un círculo como `Doble`. Use el valor de Pi (3.14159265) para el cálculo.
+3. Defina una función llamada `calculeTriangleArea` que tome dos parámetros, `base` y `height`, ambos de tipo `Double`, y devuelva el área de un triángulo como `Double`.
+4. Defina una función llamada `greet` que tome dos parámetros, `name` y `age`, ambos de tipo `String`, y devuelva un mensaje de saludo como un `String`. El mensaje de saludo debe tener el formato "Hello, [name], you are [age] years old.".
+
+Sugerencia: para calcular el área de un rectángulo, puede usar la fórmula `área = ancho * alto`. Para calcular la circunferencia de un círculo, puedes usar la fórmula `circunferencia = 2 * Pi * radio`. Para calcular el área de un triángulo, puedes usar la fórmula `área = 0,5 * base * altura`.
 
